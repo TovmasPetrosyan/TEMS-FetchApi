@@ -43,6 +43,24 @@ async function main(){
     for(const film of filmData){
       const filmContainer = document.getElementById('div');
       filmContainer.className = 'flex-item';
+
+      const titleElem = document.createElement('h2');
+      titleElem.textContent = film.Title;
+
+      const imgElem = createImageElement(film.Poster);
+      const descriptionElem = createDescriptionElement(film);
+      const moreButton = createMoreButton(descriptionElem);
+
+      // Append title, image and moreButton to the film container
+
+      filmContainer.appendChild(titleElem);
+      filmContainer.appendChild(imgElem);
+      filmContainer.appendChild(descriptionElem);
+      filmContainer.appendChild(moreButton);
+
+      // Append film to the film list
+
+      filmList.appendChild(filmContainer);
     }
 }
 
