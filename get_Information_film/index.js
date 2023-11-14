@@ -13,6 +13,9 @@ function createImageElement(src){
 function createDescriptionElement(film){
     let desc = document.createElement('div');
     desc.className = 'description';
+    let plot = document.createElement('p');
+    plot.textContent = film.Plot;
+    desc.appendChild(plot);
     let releaseDate = document.createElement('p');
     releaseDate.textContent = `Release Date: ${film.Released}`;
     desc.appendChild(releaseDate);
