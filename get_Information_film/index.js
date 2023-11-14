@@ -9,3 +9,12 @@ function createImageElement(src){
     img.src = src;
     return img;
 }
+
+function createDescriptionElement(film){
+    let desc = document.createElement('div');
+    desc.className = 'description';
+    let releaseDate = document.createElement('p');
+    releaseDate.textContent = `Release Date: ${film.Released}`;
+    desc.appendChild(releaseDate);
+    return desc;
+}
