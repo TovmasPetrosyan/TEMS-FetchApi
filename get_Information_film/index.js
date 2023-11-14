@@ -18,3 +18,20 @@ function createDescriptionElement(film){
     desc.appendChild(releaseDate);
     return desc;
 }
+
+function createMoreButton(descriptionElem){
+    let moreButton = document.createElement('button');
+        moreButton.innerText = 'more';
+        moreButton.className = 'more-button';
+
+        moreButton.onclick = function (){        
+        if(descriptionElem.style.display === 'none' || descriptionElem.style.display === ''){
+            descriptionElem.style.display = 'block';
+            moreButton.innerText = 'less';
+        }else{
+            descriptionElem.style.display = 'none';
+            moreButton.innerText = 'more';
+        }
+    }
+    return moreButton;
+}
