@@ -29,7 +29,7 @@
   }
   
   .flex-item:hover img {
-    transform: scale(1.1);
+    transform: scale(1.06);
     opacity: 1.2;
   }
 
