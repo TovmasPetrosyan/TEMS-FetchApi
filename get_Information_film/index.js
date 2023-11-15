@@ -44,6 +44,7 @@ async function main(){
     const filmData = await fetchFilmData('https://gist.githubusercontent.com/Urdzik/de477f8e3d7baf4366c9d797cfe63531/raw/38c6afa2937ef222323392cc34c8c8c77e02fc40/Movie.json');
     const filmList = document.getElementById('film-list');
     for(const film of filmData){
+      if(film.Title != "Little Women"){
       const filmContainer = document.createElement('div');
       filmContainer.className = 'flex-item';
 
@@ -65,6 +66,7 @@ async function main(){
 
       filmList.appendChild(filmContainer);
     }
+}
 }
 
 
