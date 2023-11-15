@@ -24,6 +24,14 @@
       opacity: 1;
     }
   }
+  .flex-item img {
+    transition: transform .2s ease-in-out;
+  }
+  
+  .flex-item:hover img {
+    transform: scale(1.1);
+    opacity: 1.2;
+  }
 
 img{
     max-width: 100%;
