@@ -61,6 +61,15 @@ function countryInformation(serchValue){
             capitalName.innerText = `Capital  ${getcapital}`
             capital.append(capitalName)
 
+            if (languages){
+                let language =  Object.values(languages).join(", ")
+                let languagesBox = document.querySelector(".languages")
+                clear(languagesBox)
+                let languagesName = document.createElement("p")
+                languagesName.innerText = `Oficial languages  ${language}`
+                languagesBox.append(languagesName)
+             }
+
         })
 
 }
