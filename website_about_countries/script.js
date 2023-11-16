@@ -49,6 +49,12 @@ function countryInformation(serchValue){
             image.append(imagePng)
             imagePng.setAttribute("class", "flagClass")
 
+            let countryName = document.querySelector(".countryName")
+            clear(countryName)
+            let fullName = document.createElement("h2")
+            fullName.innerText = name
+            countryName.append(fullName)
+
         })
 
 }
