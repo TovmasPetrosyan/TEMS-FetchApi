@@ -76,6 +76,12 @@ function countryInformation(serchValue){
             populationName.innerText = `Population  ${population}`
             populationClass.append(populationName)
 
+            let areaClass = document.querySelector(".area")
+            clear(areaClass)
+            let areaName = document.createElement("p")
+            areaName.innerText = `Nationality  ${area}`
+            areaClass.append(areaName)  
+
         })
 
 }
