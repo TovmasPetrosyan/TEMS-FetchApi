@@ -15,7 +15,11 @@ function fetchImages(selectedBreed) {
     .then((data) => {
       data.message.forEach((imgURL) => {
         let img = createImageElement(imgURL);
-       
+        img.onerror = () => {
+          clearContainer();
+          img.src = "404dog.jpg";
+          container.appendChild(img);
+        };
         container.appendChild(img);
       });
     })
