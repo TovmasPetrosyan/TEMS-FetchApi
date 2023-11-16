@@ -43,6 +43,7 @@ function countryInformation(serchValue){
             let area = countries[0].area
 
             let image = document.querySelector(".imageClass") 
+            clear(image)
             let imagePng = document.createElement("img")
             imagePng.setAttribute("src", flag)
             image.append(imagePng)
@@ -50,6 +51,12 @@ function countryInformation(serchValue){
 
         })
 
+}
+
+function clear(element) {
+    while (element.firstChild) {
+        element.removeChild(element.firstChild);
+    }
 }
 
 
