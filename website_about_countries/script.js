@@ -55,6 +55,12 @@ function countryInformation(serchValue){
             fullName.innerText = name
             countryName.append(fullName)
 
+            let capital = document.querySelector(".capital")
+            clear(capital)
+            let capitalName = document.createElement("p")
+            capitalName.innerText = `Capital  ${getcapital}`
+            capital.append(capitalName)
+
         })
 
 }
