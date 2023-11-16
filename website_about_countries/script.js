@@ -70,6 +70,12 @@ function countryInformation(serchValue){
                 languagesBox.append(languagesName)
              }
 
+            let populationClass = document.querySelector(".population")
+            clear(populationClass)
+            let populationName = document.createElement("p")
+            populationName.innerText = `Population  ${population}`
+            populationClass.append(populationName)
+
         })
 
 }
