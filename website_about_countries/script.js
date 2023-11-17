@@ -22,9 +22,9 @@ select.addEventListener("mouseup", () =>{
 })
 
 button.addEventListener("click", () =>{
-
-    
-    if (!countryArray.includes(search.value)){
+    let serchValue = search.value
+    serchValue = serchValue[0].toUpperCase() + serchValue.slice(1);
+    if (!countryArray.includes(serchValue)){
         clear(countryIformation)
         const newDiv = document.createElement("div")
         newDiv.classList.add("error")
@@ -33,7 +33,7 @@ button.addEventListener("click", () =>{
         newDiv.append(error)
         countryIformation.append(newDiv)
     }else {
-        countryInformation(search.value)
+        countryInformation(serchValue)
     }
 })
 
