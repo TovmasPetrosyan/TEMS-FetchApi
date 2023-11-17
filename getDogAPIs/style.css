@@ -5,10 +5,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* justify-content: center; */
   margin-top: 100px;
   height: 100vh;
 }
-
+#quantity {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: bold;
+}
 .selectDog {
   width: 100%;
   display: flex;
@@ -43,5 +55,16 @@ img {
   max-width: 250px;
   max-height: 250px;
   object-fit: cover;
+  animation: fadeInUp 1s ease-in-out;
   margin: 10px;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateX(0) translateY(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
 }
