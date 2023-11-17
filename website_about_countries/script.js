@@ -23,7 +23,9 @@ select.addEventListener("mouseup", () =>{
 
 button.addEventListener("click", () =>{
     let serchValue = search.value
-    serchValue = serchValue[0].toUpperCase() + serchValue.slice(1);
+    if (serchValue){
+        serchValue = serchValue[0].toUpperCase() + serchValue.slice(1);
+    }
     if (!countryArray.includes(serchValue)){
         clear(countryIformation)
         const newDiv = document.createElement("div")
