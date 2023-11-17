@@ -47,7 +47,7 @@ button.addEventListener("click", () =>{
         let newDiv = document.createElement("div")
         newDiv.classList.add("error")
         let error = document.createElement("img")
-        error.setAttribute("src", "/error.png")
+        error.setAttribute("src", "./error.png")
         newDiv.append(error)
         let existingErrorDiv = document.querySelector(".error");
         if (existingErrorDiv) {
