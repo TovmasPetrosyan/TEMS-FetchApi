@@ -56,9 +56,10 @@ selectElement.addEventListener("change", () => {
     .then((data) => {
       data.message.forEach((imgURL, index) => {
         let img = createImageElement(imgURL);
+        img.classList.add("dog-image");
+
         img.onerror = () => {
           img.src = "404dog.jpg";
-          img.classList.add("dog-image");
 
           container.appendChild(img);
           console.log("Image not found");
@@ -82,4 +83,32 @@ number.addEventListener("change", () => {
   fetchImages(selectedBreed, length);
 });
 
+function handleMouseDown(e) {
+  isMouseDown = true;
+  initialX = e.clientX;
+}
 
+function handleMouseUp() {
+  isMouseDown = false;
+}
+function openModal(imageSrc) {
+  modalElem.innerHTML = `<img src="${imageSrc}" alt="Dog Image">`;
+  modalElem.style.display = "flex";
+}
+
+container.addEventListener("click", (e) => {
+  const clickedImage = e.target.closest(".dog-image");
+  if (clickedImage) {
+    openModal(clickedImage.src);
+  }
+});
+
+function closeModal() {
+  modalElem.style.display = "none";
+}
+
+window.addEventListener("click", (e) => {
+  if (e.target === modalElem) {
+    closeModal();
+  }
+});
