@@ -1,6 +1,6 @@
 let search = document.querySelector(".search")
 let button = document.querySelector(".button")
-let serchValue = ""
+let select = document.querySelector("select")
 let countryArray = []
 
 fetch("https://restcountries.com/v3.1/all?fields=name")
@@ -16,18 +16,19 @@ fetch("https://restcountries.com/v3.1/all?fields=name")
         }   
 })
 
+select.addEventListener("mouseup", () =>{
+    let serchValue = document.querySelector("select").value
+    countryInformation(serchValue)
+})
+
 button.addEventListener("click", () =>{
     serchValue = search.value
-
-        if (!serchValue){
-            serchValue = document.querySelector("select").value  
-        }
-
-        if (countryArray.includes(serchValue)){
+    
+    if (countryArray.includes(serchValue)){
             countryInformation(serchValue)
-        } else {
+    } else {
             console.log(Error)
-        }
+    }
 })
 
 function countryInformation(serchValue){
