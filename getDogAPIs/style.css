@@ -5,7 +5,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   margin-top: 100px;
   height: 100vh;
 }
@@ -21,7 +20,7 @@ body {
   border-radius: 5px;
   font-weight: bold;
 }
-.selectDog {
+.selectDogContainer {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -57,6 +56,7 @@ img {
   object-fit: cover;
   animation: fadeInUp 1s ease-in-out;
   margin: 10px;
+  cursor: pointer;
 }
 @keyframes fadeInUp {
   0% {
@@ -67,4 +67,17 @@ img {
     opacity: 1;
     transform: translateX(0) translateY(0);
   }
+}
+
+#quantity {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: bold;
 }
