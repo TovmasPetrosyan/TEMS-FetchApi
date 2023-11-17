@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url('../desktop.png');
+    background-image: url('./desktop.png');
     background-size: cover;
     background-position: center;
     position : relative; 
@@ -32,41 +32,45 @@ body {
 }
 
 .search{
-    width: 300px;
+    width: 330px;
     height: 48px;
     padding: 5px;
     border-radius: 8px;
-    margin : 10px;
-   
+    padding-left:px;
     color: #737791;
     font-family: Poppins;
     font-size: 18px;
     font-weight: 700;
     font-style: normal;
     line-height: normal;  
+    border: none;
 }
 
 .button{
+    display: flex;
     width: 150px;
     height: 48px;
-    padding: 15px;
-    margin : 15px;
-    border-radius: 8px;
-    background: #0094db;
-    
+    padding: 28px;
+    margin-left: 30px;
+    border-radius: 8px ;
+    background: #0094db; 
     color: #FFF;
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
-    transition: background-color 0.3s ease-in-out;
+    line-height: normal; 
+    justify-content: center;
+    align-items: center;
+    border: none;  
 }
   
 .countries {
-    width: 500px;
-    height: 48px;
+    width: 530px;
+    height: 60px;
     border-radius: 8px;
+    margin-top:32px;
+    padding-left:5px;
     border: 0.5px solid #AECDF2;
     background: #F9FAFB;
     color: #737791;
@@ -74,14 +78,13 @@ body {
     font-size: 18px;
 }
 
-
 .countryPage{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 400px;
     height: 400px;
-    margin : 30px;
+    margin : 40px;
     padding : 15px;
     border-radius: 20px;
     background: #EEF5FE;
@@ -90,9 +93,10 @@ body {
 
 .countryPage > h1  {
     font-size: 40px;
-    margin : 10px;
+    margin : 5px;
     color: #1E1E1E;
     font-family: Bentham;
+    
 }
 
 .imageClass , .countryName , .capital ,.languages, .population, .area,.error{
@@ -103,19 +107,15 @@ body {
     white-space: nowrap;
     overflow: hidden; 
     text-overflow: ellipsis;
-    white-space: nowrap;
-    
+    white-space: nowrap;    
 }
-
 
 .flagClass{
     width: 150px; 
     height: 150px;
     border-radius: 50%; 
     object-fit: cover;   
-   
 }
-
 
 .countryName > h2 {
     font-family: Bentham;
@@ -126,6 +126,7 @@ body {
     font-size: 30px;
     margin :10px;
 }
+
 
 p {
     margin : 5px;
@@ -142,6 +143,7 @@ p {
     
 
 .button:hover {
-    background-color: #007bb5; }
+    background-color: #007bb5; 
+}
 
 
