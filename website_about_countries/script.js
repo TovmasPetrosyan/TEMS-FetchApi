@@ -88,7 +88,7 @@ function countryInformation(serchValue){
             let capital = document.querySelector(".capital")
             clear(capital)
             let capitalName = document.createElement("p")
-            capitalName.innerText = `Capital  ${getcapital}`
+            capitalName.innerText = `Capital:  ${getcapital}`
             capital.append(capitalName)
 
             if (languages){
@@ -96,20 +96,20 @@ function countryInformation(serchValue){
                 let languagesBox = document.querySelector(".languages")
                 clear(languagesBox)
                 let languagesName = document.createElement("p")
-                languagesName.innerText = `Oficial languages  ${language}`
+                languagesName.innerText = `Oficial languages:  ${language}`
                 languagesBox.append(languagesName)
              }
 
             let populationClass = document.querySelector(".population")
             clear(populationClass)
             let populationName = document.createElement("p")
-            populationName.innerText = `Population  ${population}`
+            populationName.innerText = `Population:  ${population}`
             populationClass.append(populationName)
 
             let areaClass = document.querySelector(".area")
             clear(areaClass)
             let areaName = document.createElement("p")
-            areaName.innerText = `Nationality  ${area}`
+            areaName.innerText = `Nationality:  ${area}`
             areaClass.append(areaName) 
         })
 }
