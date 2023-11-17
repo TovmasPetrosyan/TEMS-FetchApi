@@ -28,7 +28,7 @@
     transition: transform .2s ease-in-out;
   }
   
-  .flex-item:hover img {
+  img:hover  {
     transform: scale(1.06);
     opacity: 1.2;
   }
@@ -58,7 +58,7 @@ img{
   
 }
 .more-button:hover {
-    background-color: #007be5;
+    background-color: #075da8;
   }
   body{
    background:  #EEF5FE;
