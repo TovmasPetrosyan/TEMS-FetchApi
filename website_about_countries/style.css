@@ -1,8 +1,7 @@
 * {
    margin: 0;
    padding: 0;
-   font-size: 20px;
-   font-weight: 700; 
+   font-family: Bentham;
 }
 
 body {
@@ -12,12 +11,10 @@ body {
     background-position: center;
     position : relative; 
     background-repeat: no-repeat;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
 }
   
 
@@ -55,17 +52,15 @@ body {
     padding: 15px;
     margin : 15px;
     border-radius: 8px;
-    /* background: #FFCE4E; */
     background: #0094db;
     
-    
-
     color: #FFF;
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    transition: background-color 0.3s ease-in-out;
 }
   
 .countries {
@@ -74,13 +69,9 @@ body {
     border-radius: 8px;
     border: 0.5px solid #AECDF2;
     background: #F9FAFB;
-
     color: #737791;
     font-family: Inter;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
 }
 
 
@@ -88,47 +79,52 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     width: 400px;
     height: 400px;
     margin : 30px;
     padding : 15px;
     border-radius: 20px;
-    background: #EEF5FE;   
+    background: #EEF5FE;
+   
 }
 
 .countryPage > h1  {
     font-size: 40px;
     margin : 10px;
-    font-style: normal;
-    line-height: normal; 
     color: #1E1E1E;
     font-family: Bentham;
 }
 
-.imageClass , .countryName , .capital ,.languages, .population, .area{
+.imageClass , .countryName , .capital ,.languages, .population, .area,.error{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
 }
+
 
 .flagClass{
     width: 150px; 
     height: 150px;
     border-radius: 50%; 
-    object-fit: cover;
-    
+    object-fit: cover;   
+   
 }
 
+
 .countryName > h2 {
-    color: #1E1E1E;
     font-family: Bentham;
-    font-size: 30px;
+    color: #1E1E1E;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    font-size: 30px;
     margin :10px;
-   
 }
 
 p {
@@ -136,15 +132,16 @@ p {
     color: #1E1E1E;
     font-family: Inter;
     font-size: 20px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
 }
-
 
 .error > img{
     margin:20px;
     height :300px
-    
 }
     
+
+.button:hover {
+    background-color: #007bb5; }
+
+
