@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Bentham;
+ }
+ 
+ body {
+     background-image: url('./desktop.png');
+     background-size: cover;
+     background-position: center;
+     position : relative; 
+     background-repeat: no-repeat;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+   
+ .header{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 70px;
+ }
+ 
+ .searchDiv {
+     display: flex;
+     gap: 10px;
+     
+ }
+ 
+ .search{
+     width: 330px;
+     height: 48px;
+     padding: 5px;
+     border-radius: 8px;
+     padding-left:px;
+     color: #737791;
+     font-family: Poppins;
+     font-size: 18px;
+     font-weight: 700;
+     font-style: normal;
+     line-height: normal;  
+     border: none;
+ }
+ 
+ .button{
+     display: flex;
+     width: 150px;
+     height: 48px;
+     padding: 28px;
+     margin-left: 30px;
+     border-radius: 8px ;
+     background: #0094db; 
+     color: #FFF;
+     font-family: Inter;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal; 
+     justify-content: center;
+     align-items: center;
+     border: none;  
+ }
+   
+ .countries {
+     width: 530px;
+     height: 60px;
+     border-radius: 8px;
+     margin-top:32px;
+     padding-left:5px;
+     border: 0.5px solid #AECDF2;
+     background: #F9FAFB;
+     color: #737791;
+     font-family: Inter;
+     font-size: 18px;
+ }
+ 
+ .countryPage{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 400px;
+     height: 400px;
+     margin : 40px;
+     padding : 15px;
+     border-radius: 20px;
+     background: #EEF5FE;
+    
+ }
+ 
+ .countryPage > h1  {
+     font-size: 40px;
+     margin : 5px;
+     color: #1E1E1E;
+     font-family: Bentham;
+     
+ }
+ 
+ .imageClass , .countryName , .capital ,.languages, .population, .area,.error{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 400px;
+     white-space: nowrap;
+     overflow: hidden; 
+     text-overflow: ellipsis;
+     white-space: nowrap;    
+ }
+ 
+ .flagClass{
+     width: 150px; 
+     height: 150px;
+     border-radius: 50%; 
+     object-fit: cover;   
+ }
+ 
+ .countryName > h2 {
+     font-family: Bentham;
+     color: #1E1E1E;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     font-size: 30px;
+     margin :10px;
+ }
+ 
+ p {
+     margin : 5px;
+     color: #1E1E1E;
+     font-family: Inter;
+     font-size: 20px;
+     font-weight: 400;
+ }
+ 
+ .error > img{
+     margin:20px;
+     height :300px
+ }
+     
+ .button:hover {
+     background-color: #007bb5; 
+ }
+ 
+ 
+ 
