@@ -103,7 +103,7 @@ function countryInformation(serchValue){
 }
 
 button.addEventListener("click", () =>{
-    const serchValue = search.value
+    let serchValue = search.value
     if (serchValue){
         serchValue = serchValue[0].toUpperCase() + serchValue.slice(1);
     }
