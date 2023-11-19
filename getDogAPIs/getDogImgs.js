@@ -57,12 +57,7 @@ selectElement.addEventListener("change", () => {
       data.message.forEach((imgURL, index) => {
         let img = createImageElement(imgURL);
         img.classList.add("dog-image");
-
         img.onerror = () => {
-          img.src = "404dog.jpg";
-
-          container.appendChild(img);
-          console.log("Image not found");
         };
         container.appendChild(img);
         let option = document.createElement("option");
